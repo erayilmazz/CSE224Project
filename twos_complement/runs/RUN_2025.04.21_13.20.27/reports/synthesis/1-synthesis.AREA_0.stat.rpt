@@ -1,0 +1,26 @@
+
+63. Printing statistics.
+
+=== twos_complement ===
+
+   Number of wires:                 12
+   Number of wire bits:             26
+   Number of public wires:           2
+   Number of public wire bits:      16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     sky130_fd_sc_hd__and2_2         3
+     sky130_fd_sc_hd__and2b_2        1
+     sky130_fd_sc_hd__buf_1          2
+     sky130_fd_sc_hd__buf_2          1
+     sky130_fd_sc_hd__nor2_2         4
+     sky130_fd_sc_hd__o31a_2         1
+     sky130_fd_sc_hd__o31ai_2        1
+     sky130_fd_sc_hd__or4_2          2
+     sky130_fd_sc_hd__xnor2_2        2
+     sky130_fd_sc_hd__xor2_2         1
+
+   Chip area for module '\twos_complement': 157.651200
+

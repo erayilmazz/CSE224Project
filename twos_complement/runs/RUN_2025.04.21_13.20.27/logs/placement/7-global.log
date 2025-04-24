@@ -1,0 +1,8 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Design name: twos_complement
+Core Area Boundaries: 5520 10880 28980 46240
+Number of instances 51
+Placed 18 instances.

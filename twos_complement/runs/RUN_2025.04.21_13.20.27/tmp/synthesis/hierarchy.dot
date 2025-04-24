@@ -1,0 +1,18 @@
+digraph "twos_complement" {
+label="twos_complement";
+rankdir="LR";
+remincross=true;
+n4 [ shape=octagon, label="out", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="in", color="black", fontcolor="black" ];
+v0 [ label="1" ];
+c9 [ shape=record, label="{{<p6> A|<p7> B}|$3\n$add|{<p8> Y}}",  ];
+c10 [ shape=record, label="{{<p6> A}|$2\n$not|{<p8> Y}}",  ];
+c11 [ shape=record, label="{{<p6> A}|$1\n$pos|{<p8> Y}}",  ];
+x1 [ shape=record, style=rounded, label="<s0> 7:0 - 7:0 ", color="black", fontcolor="black" ];
+c9:p8:e -> x1:s0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c10:p8:e -> c9:p6:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c11:p8:e -> c10:p6:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+x1:e -> n4:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> c11:p6:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+v0:e -> c9:p7:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}

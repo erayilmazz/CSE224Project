@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 6900 11424
+string GDS_END 182792
+string GDS_FILE /openlane/designs/twos_complement/runs/RUN_2025.04.21_13.20.27/results/signoff/twos_complement.magic.gds
+string GDS_START 96238
+<< end >>

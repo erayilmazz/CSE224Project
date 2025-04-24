@@ -1,0 +1,16 @@
+
+55. Printing statistics.
+
+=== twos_complement ===
+
+   Number of wires:                 10
+   Number of wire bits:             24
+   Number of public wires:           2
+   Number of public wire bits:      16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $_OR_                           8
+     $_XOR_                          7
+

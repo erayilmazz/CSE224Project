@@ -1,0 +1,94 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1745241663
+<< nwell >>
+rect 1066 2159 5834 9286
+<< obsli1 >>
+rect 1104 2159 5796 9265
+<< obsm1 >>
+rect 842 2128 5796 9296
+<< obsm2 >>
+rect 846 847 5502 10441
+<< metal3 >>
+rect 0 10344 800 10464
+rect 6100 10344 6900 10464
+rect 0 8984 800 9104
+rect 6100 8984 6900 9104
+rect 0 7624 800 7744
+rect 6100 7624 6900 7744
+rect 0 6264 800 6384
+rect 6100 6264 6900 6384
+rect 0 4904 800 5024
+rect 6100 4904 6900 5024
+rect 0 3544 800 3664
+rect 6100 3544 6900 3664
+rect 0 2184 800 2304
+rect 6100 2184 6900 2304
+rect 0 824 800 944
+rect 6100 824 6900 944
+<< obsm3 >>
+rect 880 10264 6020 10437
+rect 798 9184 6100 10264
+rect 880 8904 6020 9184
+rect 798 7824 6100 8904
+rect 880 7544 6020 7824
+rect 798 6464 6100 7544
+rect 880 6184 6020 6464
+rect 798 5104 6100 6184
+rect 880 4824 6020 5104
+rect 798 3744 6100 4824
+rect 880 3464 6020 3744
+rect 798 2384 6100 3464
+rect 880 2104 6020 2384
+rect 798 1024 6100 2104
+rect 880 851 6020 1024
+<< metal4 >>
+rect 1944 2128 2264 9296
+rect 2604 2128 2924 9296
+<< labels >>
+rlabel metal4 s 2604 2128 2924 9296 6 VGND
+port 1 nsew ground bidirectional
+rlabel metal4 s 1944 2128 2264 9296 6 VPWR
+port 2 nsew power bidirectional
+rlabel metal3 s 0 10344 800 10464 6 in[0]
+port 3 nsew signal input
+rlabel metal3 s 0 8984 800 9104 6 in[1]
+port 4 nsew signal input
+rlabel metal3 s 0 7624 800 7744 6 in[2]
+port 5 nsew signal input
+rlabel metal3 s 0 6264 800 6384 6 in[3]
+port 6 nsew signal input
+rlabel metal3 s 0 4904 800 5024 6 in[4]
+port 7 nsew signal input
+rlabel metal3 s 0 3544 800 3664 6 in[5]
+port 8 nsew signal input
+rlabel metal3 s 0 2184 800 2304 6 in[6]
+port 9 nsew signal input
+rlabel metal3 s 0 824 800 944 6 in[7]
+port 10 nsew signal input
+rlabel metal3 s 6100 10344 6900 10464 6 out[0]
+port 11 nsew signal output
+rlabel metal3 s 6100 8984 6900 9104 6 out[1]
+port 12 nsew signal output
+rlabel metal3 s 6100 7624 6900 7744 6 out[2]
+port 13 nsew signal output
+rlabel metal3 s 6100 6264 6900 6384 6 out[3]
+port 14 nsew signal output
+rlabel metal3 s 6100 4904 6900 5024 6 out[4]
+port 15 nsew signal output
+rlabel metal3 s 6100 3544 6900 3664 6 out[5]
+port 16 nsew signal output
+rlabel metal3 s 6100 2184 6900 2304 6 out[6]
+port 17 nsew signal output
+rlabel metal3 s 6100 824 6900 944 6 out[7]
+port 18 nsew signal output
+<< properties >>
+string FIXED_BBOX 0 0 6900 11424
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 182792
+string GDS_FILE /openlane/designs/twos_complement/runs/RUN_2025.04.21_13.20.27/results/signoff/twos_complement.magic.gds
+string GDS_START 96238
+<< end >>
+

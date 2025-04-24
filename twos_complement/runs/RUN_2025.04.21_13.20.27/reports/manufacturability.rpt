@@ -1,0 +1,19 @@
+Design Name: twos_complement
+Run Directory: /openlane/designs/twos_complement/runs/RUN_2025.04.21_13.20.27
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/twos_complement/runs/RUN_2025.04.21_13.20.27/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/twos_complement/runs/RUN_2025.04.21_13.20.27/logs/signoff/37-twos_complement.lef.lvs.log
+Number of nets: 44                         |Number of nets: 44                         
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/twos_complement/runs/RUN_2025.04.21_13.20.27/logs/signoff/40-arc.log
+Pin violations: 0
+Net violations: 0

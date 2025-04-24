@@ -1,0 +1,34 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Top-level design name: twos_complement
+Block boundaries: 0 0 34500 57120
+Horizontal Tracks Origin: 340, Count: 84, Step: 680
+Vertical Tracks Origin: 230, Count: 75, Step: 460
+Placement details for the #E side
+Virtual pin count:  0
+Actual pin count:  8
+Total pin count:  8
+Tracks count:  42
+Tracks per pin:  5
+Used tracks count:  36
+Unused track count:  6
+Starting track index:  3
+Placement Map:
+[340, 1700, 3060, [91m4420[0m, 5780, 7140, 8500, 9860, [91m11220[0m, 12580, 13940, 15300, 16660, [91m18020[0m, 19380, 20740, 22100, 23460, [91m24820[0m, 26180, 27540, 28900, 30260, [91m31620[0m, 32980, 34340, 35700, 37060, [91m38420[0m, 39780, 41140, 42500, 43860, [91m45220[0m, 46580, 47940, 49300, 50660, [91m52020[0m, 53380, 54740, 56100, ]
+Indices of used tracks: [3, 8, 13, 18, 23, 28, 33, 38]
+---
+Placement details for the #W side
+Virtual pin count:  0
+Actual pin count:  8
+Total pin count:  8
+Tracks count:  42
+Tracks per pin:  5
+Used tracks count:  36
+Unused track count:  6
+Starting track index:  3
+Placement Map:
+[340, 1700, 3060, [91m4420[0m, 5780, 7140, 8500, 9860, [91m11220[0m, 12580, 13940, 15300, 16660, [91m18020[0m, 19380, 20740, 22100, 23460, [91m24820[0m, 26180, 27540, 28900, 30260, [91m31620[0m, 32980, 34340, 35700, 37060, [91m38420[0m, 39780, 41140, 42500, 43860, [91m45220[0m, 46580, 47940, 49300, 50660, [91m52020[0m, 53380, 54740, 56100, ]
+Indices of used tracks: [3, 8, 13, 18, 23, 28, 33, 38]
+---
