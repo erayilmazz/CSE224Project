@@ -1,0 +1,34 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Top-level design name: alu
+Block boundaries: 0 0 50000 70000
+Horizontal Tracks Origin: 340, Count: 103, Step: 680
+Vertical Tracks Origin: 230, Count: 109, Step: 460
+Placement details for the #E side
+Virtual pin count:  0
+Actual pin count:  8
+Total pin count:  8
+Tracks count:  52
+Tracks per pin:  6
+Used tracks count:  43
+Unused track count:  9
+Starting track index:  4
+Placement Map:
+[340, 1700, 3060, 4420, [91m5780[0m, 7140, 8500, 9860, 11220, 12580, [91m13940[0m, 15300, 16660, 18020, 19380, 20740, [91m22100[0m, 23460, 24820, 26180, 27540, 28900, [91m30260[0m, 31620, 32980, 34340, 35700, 37060, [91m38420[0m, 39780, 41140, 42500, 43860, 45220, [91m46580[0m, 47940, 49300, 50660, 52020, 53380, [91m54740[0m, 56100, 57460, 58820, 60180, 61540, [91m62900[0m, 64260, 65620, 66980, 68340, 69700, ]
+Indices of used tracks: [4, 10, 16, 22, 28, 34, 40, 46]
+---
+Placement details for the #W side
+Virtual pin count:  0
+Actual pin count:  19
+Total pin count:  19
+Tracks count:  52
+Tracks per pin:  2
+Used tracks count:  37
+Unused track count:  15
+Starting track index:  7
+Placement Map:
+[340, 1700, 3060, 4420, 5780, 7140, 8500, [91m9860[0m, 11220, [91m12580[0m, 13940, [91m15300[0m, 16660, [91m18020[0m, 19380, [91m20740[0m, 22100, [91m23460[0m, 24820, [91m26180[0m, 27540, [91m28900[0m, 30260, [91m31620[0m, 32980, [91m34340[0m, 35700, [91m37060[0m, 38420, [91m39780[0m, 41140, [91m42500[0m, 43860, [91m45220[0m, 46580, [91m47940[0m, 49300, [91m50660[0m, 52020, [91m53380[0m, 54740, [91m56100[0m, 57460, [91m58820[0m, 60180, 61540, 62900, 64260, 65620, 66980, 68340, 69700, ]
+Indices of used tracks: [7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43]
+---

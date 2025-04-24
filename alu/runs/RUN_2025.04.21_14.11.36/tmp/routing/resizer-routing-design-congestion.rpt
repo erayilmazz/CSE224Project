@@ -1,0 +1,28 @@
+violation type: Vertical congestion
+	srcs: net:_013_ net:_036_ net:_069_ net:_096_ net:_104_ net:_124_ net:_128_ net:_129_ net:_154_ net:_162_ net:_186_ net:_235_ net:_246_ net:net13 net:net17 
+	congestion information: capacity:14 usage:15 overflow:1
+	bbox = ( 0, 48.3 ) - ( 6.9, 55.2) on Layer -
+violation type: Vertical congestion
+	srcs: net:B[5] net:_011_ net:_015_ net:_028_ net:_037_ net:_077_ net:_090_ net:_149_ net:_158_ net:_175_ net:_244_ net:net9 net:net32 
+	congestion information: capacity:12 usage:13 overflow:1
+	bbox = ( 6.9, 48.3 ) - ( 13.8, 55.2) on Layer -
+violation type: Vertical congestion
+	srcs: net:_011_ net:_035_ net:_038_ net:_044_ net:_045_ net:_063_ net:_081_ net:_091_ net:_097_ net:_098_ net:_110_ net:_197_ net:_244_ net:net31 net:net34 
+	congestion information: capacity:13 usage:15 overflow:2
+	bbox = ( 13.8, 41.4 ) - ( 20.7, 48.3) on Layer -
+violation type: Vertical congestion
+	srcs: net:_013_ net:_047_ net:_099_ net:_100_ net:_114_ net:_126_ net:_170_ net:_171_ net:_198_ net:_202_ net:_205_ net:_231_ net:_238_ net:net5 net:net45 
+	congestion information: capacity:14 usage:15 overflow:1
+	bbox = ( 27.6, 41.4 ) - ( 34.5, 48.3) on Layer -
+violation type: Vertical congestion
+	srcs: net:_000_ net:_004_ net:_009_ net:_019_ net:_025_ net:_052_ net:_088_ net:_141_ net:_142_ net:_144_ net:_156_ net:_168_ net:_169_ net:_185_ net:_200_ 
+	congestion information: capacity:14 usage:15 overflow:1
+	bbox = ( 48.3, 41.4 ) - ( 55.2, 48.3) on Layer -
+violation type: Vertical congestion
+	srcs: net:_034_ net:_049_ net:_093_ net:_094_ net:_095_ net:_133_ net:_150_ net:_176_ net:_183_ net:_194_ net:_242_ net:_243_ net:net20 
+	congestion information: capacity:12 usage:13 overflow:1
+	bbox = ( 62.1, 41.4 ) - ( 69, 48.3) on Layer -
+violation type: Vertical congestion
+	srcs: net:_002_ net:_008_ net:_020_ net:_053_ net:_119_ net:_123_ net:_132_ net:_139_ net:_140_ net:_145_ net:_167_ net:_223_ net:_225_ 
+	congestion information: capacity:11 usage:13 overflow:2
+	bbox = ( 82.8, 41.4 ) - ( 89.7, 48.3) on Layer -

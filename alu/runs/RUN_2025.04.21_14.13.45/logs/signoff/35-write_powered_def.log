@@ -1,0 +1,18 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0227] LEF file: /openlane/designs/alu/runs/RUN_2025.04.21_14.13.45/tmp/merged.nom.lef, created 13 layers, 25 vias, 441 library cells
+[INFO ODB-0127] Reading DEF file: /openlane/designs/alu/runs/RUN_2025.04.21_14.13.45/results/routing/alu.def
+[INFO ODB-0128] Design: alu
+[INFO ODB-0130]     Created 29 pins.
+[INFO ODB-0131]     Created 3615 components and 14646 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 13522 connections.
+[INFO ODB-0133]     Created 328 nets and 1124 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/alu/runs/RUN_2025.04.21_14.13.45/results/routing/alu.def
+Top-level design name: alu
+Found default power net 'VPWR'
+Found default ground net 'VGND'
+Found 1 power ports.
+Found 1 ground ports.
+Modified power connections of 3615/3615 cells.

@@ -1,0 +1,62 @@
+[ERROR]: during executing: "openroad -exit -no_init -python /openlane/scripts/odbpy/io_place.py --config {} --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension 0 --ver-extension 0 --length 4 --unmatched-error --input-lef /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/merged.nom.lef --output-def /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.def --output /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.odb /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/3-initial_fp.odb |& tee /dev/null /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/logs/floorplan/4-place_io.log"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Top-level design name: alu
+[WARNING]: Some pins weren't matched by the config file
+Those are: ['A[0]', 'A[1]', 'A[2]', 'A[3]', 'A[4]', 'A[5]', 'A[6]', 'A[7]', 'B[0]', 'B[1]', 'B[2]', 'B[3]', 'B[4]', 'B[5]', 'B[6]', 'B[7]', 'opcode[0]', 'opcode[1]', 'opcode[2]', 'out[0]', 'out[1]', 'out[2]', 'out[3]', 'out[4]', 'out[5]', 'out[6]', 'out[7]']
+Treating unmatched pins as errors. Exiting..
+child process exited abnormally
+
+[ERROR]: Step 4 (floorplan) failed with error:
+-code 1 -level 0 -errorstack {INNER {invokeStk1 throw_error} CALL {try_exec openroad -exit -no_init -python /openlane/scripts/odbpy/io_place.py --config {} --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension 0 --ver-extension 0 --length 4 --unmatched-error --input-lef /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/merged.nom.lef --output-def /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.def --output /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.odb /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/3-initial_fp.odb |& tee /dev/null /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/logs/floorplan/4-place_io.log} CALL {run_odbpy_script /openlane/scripts/odbpy/io_place.py --config {} --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension 0 --ver-extension 0 --length 4 --unmatched-error --input-lef /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/merged.nom.lef --output-def /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.def --output /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.odb /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/3-initial_fp.odb |& tee /dev/null /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/logs/floorplan/4-place_io.log} CALL {manipulate_layout /openlane/scripts/odbpy/io_place.py -indexed_log /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/logs/floorplan/4-place_io.log -output_def /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.def -output /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/4-io.odb -input /openlane/designs/alu/runs/RUN_2025.04.21_14.06.37/tmp/floorplan/3-initial_fp.odb --config {} --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension 0 --ver-extension 0 --length 4 --unmatched-error} CALL place_io_ol CALL run_floorplan CALL {run_non_interactive_mode -design alu}} -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "try_exec" line 15)
+    invoked from within
+"try_exec $::env(OPENROAD_BIN) -exit -no_init -python {*}$args"
+    (procedure "run_odbpy_script" line 3)
+    invoked from within
+"run_odbpy_script {*}$args  --input-lef $::env(MERGED_LEF)  --output-def $arg_values(-output_def)  --output $arg_values(-output)  $arg_values(-input)  ..."
+    (procedure "manipulate_layout" line 19)
+    invoked from within
+"manipulate_layout $::env(SCRIPTS_DIR)/odbpy/io_place.py -indexed_log [index_file $::env(floorplan_logs)/place_io.log] -output_def $arg_values(-output_..."
+    (procedure "place_io_ol" line 50)
+    invoked from within
+"place_io_ol"
+    (procedure "run_floorplan" line 27)
+    invoked from within
+"run_floorplan"} -errorline 1
+[ERROR]: Failed to create manufacturability and metric reports:
+[ERROR]: Traceback (most recent call last):
+  File "/openlane/scripts/generate_reports.py", line 184, in <module>
+    cli()
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/generate_reports.py", line 51, in cli
+    report = Report(design, tag, design_name, params, run_path).get_report()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 809, in get_report
+    *self.extract_all_values(),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 359, in extract_all_values
+    power_report = Artifact(
+                   ^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 62, in __init__
+    self.pathname = matches[0]
+                    ~~~~~~~^^^
+IndexError: list index out of range
+[ERROR]: Flow failed.

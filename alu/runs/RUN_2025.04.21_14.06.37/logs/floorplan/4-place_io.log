@@ -1,0 +1,8 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Top-level design name: alu
+[WARNING]: Some pins weren't matched by the config file
+Those are: ['A[0]', 'A[1]', 'A[2]', 'A[3]', 'A[4]', 'A[5]', 'A[6]', 'A[7]', 'B[0]', 'B[1]', 'B[2]', 'B[3]', 'B[4]', 'B[5]', 'B[6]', 'B[7]', 'opcode[0]', 'opcode[1]', 'opcode[2]', 'out[0]', 'out[1]', 'out[2]', 'out[3]', 'out[4]', 'out[5]', 'out[6]', 'out[7]']
+Treating unmatched pins as errors. Exiting..

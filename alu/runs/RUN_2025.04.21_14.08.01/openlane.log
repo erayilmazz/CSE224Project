@@ -1,0 +1,92 @@
+[INFO]: Run Directory: /openlane/designs/alu/runs/RUN_2025.04.21_14.08.01
+[WARNING]: DIODE_INSERTION_STRATEGY is now deprecated; use GRT_REPAIR_ANTENNAS, DIODE_ON_PORTS and RUN_HEURISTIC_DIODE_INSERTION instead.
+[INFO]: DIODE_INSERTION_STRATEGY set to 3. Setting GRT_REPAIR_ANTENNAS to 1
+[INFO]: Saving runtime environment...
+[INFO]: Preparing LEF files for the nom corner...
+[INFO]: Preparing LEF files for the min corner...
+[INFO]: Preparing LEF files for the max corner...
+[WARNING]: PNR_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[WARNING]: SIGNOFF_SDC_FILE is not set. It is recommended to write a custom SDC file for the design. Defaulting to BASE_SDC_FILE
+[INFO]: Running linter (Verilator) (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/synthesis/linter.log)...
+[INFO]: 0 errors found by linter
+[WARNING]: 437 warnings found by linter
+[INFO]: Running Synthesis (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/synthesis/1-synthesis.log)...
+[INFO]: Running Single-Corner Static Timing Analysis (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/synthesis/2-sta.log)...
+[INFO]: Running Initial Floorplanning (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/floorplan/3-initial_fp.log)...
+[INFO]: Floorplanned with width 38.64 and height 46.24.
+[INFO]: Running IO Placement (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/floorplan/4-place_io.log)...
+[INFO]: Running Tap/Decap Insertion (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/floorplan/5-tap.log)...
+[INFO]: Power planning with power {VPWR} and ground {VGND}...
+[INFO]: Generating PDN (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/floorplan/6-pdn.log)...
+[INFO]: Performing Random Global Placement (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/placement/7-global.log)...
+[INFO]: Running Placement Resizer Design Optimizations (log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/placement/8-resizer.log)...
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer.tcl
+[ERROR]: Log: designs/alu/runs/RUN_2025.04.21_14.08.01/logs/placement/8-resizer.log
+[ERROR]: Last 10 lines:
+[INFO DPL-0035]  _501_
+[INFO DPL-0035]  _488_
+[INFO DPL-0035]  _488_
+[INFO DPL-0035]  input16
+[INFO DPL-0035]  _322_
+[INFO DPL-0035]  _322_
+[INFO DPL-0035]  _322_
+[ERROR DPL-0036] Detailed placement failed.
+Error: resizer.tcl, 66 DPL-0036
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[INFO]: Saving runtime environment...
+[INFO]: Reproducible packaged: Please tarball and upload 'designs/alu/runs/RUN_2025.04.21_14.08.01/issue_reproducible' if you're going to submit an issue.
+[ERROR]: Step 8 (placement) failed with error:
+-code 1 -level 0 -errorstack {INNER {invokeStk1 throw_error} CALL {run_tcl_script -tool openroad -no_consume /openlane/scripts/openroad/resizer.tcl -indexed_log /openlane/designs/alu/runs/RUN_2025.04.21_14.08.01/logs/placement/8-resizer.log -save to=/openlane/designs/alu/runs/RUN_2025.04.21_14.08.01/tmp/placement,name=resizer,def,odb,sdc,netlist,powered_netlist} CALL {run_openroad_script /openlane/scripts/openroad/resizer.tcl -indexed_log /openlane/designs/alu/runs/RUN_2025.04.21_14.08.01/logs/placement/8-resizer.log -save to=/openlane/designs/alu/runs/RUN_2025.04.21_14.08.01/tmp/placement,name=resizer,def,odb,sdc,netlist,powered_netlist} CALL run_resizer_design CALL run_placement CALL run_placement_step CALL {run_non_interactive_mode -design alu}} -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "run_tcl_script" line 219)
+    invoked from within
+"run_tcl_script -tool openroad -no_consume {*}$args"
+    (procedure "run_openroad_script" line 2)
+    invoked from within
+"run_openroad_script $::env(SCRIPTS_DIR)/openroad/resizer.tcl -indexed_log [index_file $::env(placement_logs)/resizer.log] -save "to=$::env(placement_t..."
+    (procedure "run_resizer_design" line 8)
+    invoked from within
+"run_resizer_design"
+    (procedure "run_placement" line 21)
+    invoked from within
+"run_placement"
+    (procedure "run_placement_step" line 8)
+    invoked from within
+"run_placement_step"} -errorline 1
+[INFO]: Saving current set of views in 'designs/alu/runs/RUN_2025.04.21_14.08.01/results/final'...
+[INFO]: Generating final set of reports...
+[ERROR]: Failed to create manufacturability and metric reports:
+[ERROR]: Traceback (most recent call last):
+  File "/openlane/scripts/generate_reports.py", line 184, in <module>
+    cli()
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/generate_reports.py", line 51, in cli
+    report = Report(design, tag, design_name, params, run_path).get_report()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 809, in get_report
+    *self.extract_all_values(),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 359, in extract_all_values
+    power_report = Artifact(
+                   ^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 62, in __init__
+    self.pathname = matches[0]
+                    ~~~~~~~^^^
+IndexError: list index out of range
+[INFO]: Saving runtime environment...
+[ERROR]: Flow failed.
+[INFO]: The failure may have been because of the following warnings:

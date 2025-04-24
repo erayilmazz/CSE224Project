@@ -1,0 +1,64 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_design.tcl
+[ERROR]: Log: designs/alu/runs/RUN_2025.04.21_14.11.36/logs/routing/14-resizer_design.log
+[ERROR]: Last 10 lines:
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0197] Via related to pin nodes: 2616
+[INFO GRT-0198] Via related Steiner nodes: 125
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 4323
+[INFO GRT-0112] Final usage 3D: 17376
+[ERROR GRT-0119] Routing congestion too high. Check the congestion heatmap in the GUI and load /openlane/designs/alu/runs/RUN_2025.04.21_14.11.36/tmp/routing/resizer-routing-design-congestion.rpt in the DRC viewer.
+Error: resizer_routing_design.tcl, 46 GRT-0119
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: Step 14 (routing) failed with error:
+-code 1 -level 0 -errorstack {INNER {invokeStk1 throw_error} CALL {run_tcl_script -tool openroad -no_consume /openlane/scripts/openroad/resizer_routing_design.tcl -indexed_log /openlane/designs/alu/runs/RUN_2025.04.21_14.11.36/logs/routing/14-resizer_design.log -save dir=/openlane/designs/alu/runs/RUN_2025.04.21_14.11.36/tmp/routing,def,sdc,odb,netlist,powered_netlist} CALL {run_openroad_script /openlane/scripts/openroad/resizer_routing_design.tcl -indexed_log /openlane/designs/alu/runs/RUN_2025.04.21_14.11.36/logs/routing/14-resizer_design.log -save dir=/openlane/designs/alu/runs/RUN_2025.04.21_14.11.36/tmp/routing,def,sdc,odb,netlist,powered_netlist} CALL run_resizer_design_routing CALL run_routing CALL run_routing_step CALL {run_non_interactive_mode -design alu}} -errorcode NONE -errorinfo {
+    while executing
+"throw_error"
+    (procedure "run_tcl_script" line 219)
+    invoked from within
+"run_tcl_script -tool openroad -no_consume {*}$args"
+    (procedure "run_openroad_script" line 2)
+    invoked from within
+"run_openroad_script $::env(SCRIPTS_DIR)/openroad/resizer_routing_design.tcl -indexed_log $log -save "dir=$::env(routing_tmpfiles),def,sdc,odb,netlist,..."
+    (procedure "run_resizer_design_routing" line 9)
+    invoked from within
+"run_resizer_design_routing"
+    (procedure "run_routing" line 8)
+    invoked from within
+"run_routing"
+    (procedure "run_routing_step" line 7)
+    invoked from within
+"run_routing_step"} -errorline 1
+[ERROR]: Failed to create manufacturability and metric reports:
+[ERROR]: Traceback (most recent call last):
+  File "/openlane/scripts/generate_reports.py", line 184, in <module>
+    cli()
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/8ywrzlq8yyqrif2sfvbgg8vsxhj80ry7-python3-3.11.9-env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/generate_reports.py", line 51, in cli
+    report = Report(design, tag, design_name, params, run_path).get_report()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 809, in get_report
+    *self.extract_all_values(),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 359, in extract_all_values
+    power_report = Artifact(
+                   ^^^^^^^^^
+  File "/openlane/scripts/report/report.py", line 62, in __init__
+    self.pathname = matches[0]
+                    ~~~~~~~^^^
+IndexError: list index out of range
+[ERROR]: Flow failed.
