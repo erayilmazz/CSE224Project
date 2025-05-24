@@ -1,0 +1,39 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+[INFO] Setting operating conditions to 'tt_025C_1v80'…
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+[INFO]: Reading ODB at '/openlane/designs/ZeroToFiveCounter/runs/RUN_2025.05.23_11.22.06/results/routing/ZeroToFiveCounter.odb'…
+Reading design constraints file at '/openlane/designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc'…
+[INFO]: Setting RC values...
+[INFO PSM-0040] All shapes on net VPWR are connected.
+########## IR report #################
+Net              : VPWR
+Corner           : Typical
+Supply voltage   : 1.80e+00 V
+Worstcase voltage: 1.80e+00 V
+Average voltage  : 1.80e+00 V
+Average IR drop  : 1.68e-06 V
+Worstcase IR drop: 8.25e-05 V
+Percentage drop  : 0.00 %
+######################################
+[INFO PSM-0040] All shapes on net VGND are connected.
+########## IR report #################
+Net              : VGND
+Corner           : Typical
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 5.93e-05 V
+Average voltage  : 1.62e-06 V
+Average IR drop  : 1.62e-06 V
+Worstcase IR drop: 5.93e-05 V
+Percentage drop  : 0.00 %
+######################################

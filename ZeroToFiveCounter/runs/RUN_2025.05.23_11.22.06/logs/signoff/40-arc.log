@@ -1,0 +1,62 @@
+OpenROAD b16bda7e82721d10566ff7e2b68f1ff0be9f9e38 
+Features included (+) or not (-): +Charts +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+define_corners Typical
+read_liberty -corner Typical /root/.volare/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Using 1e-12 for capacitance...
+Using 1e+03 for resistance...
+Using 1e-09 for time...
+Using 1e+00 for voltage...
+Using 1e-03 for current...
+Using 1e-09 for power...
+Using 1e-06 for distance...
+[INFO]: Reading ODB at '/openlane/designs/ZeroToFiveCounter/runs/RUN_2025.05.23_11.22.06/results/routing/ZeroToFiveCounter.odb'…
+Reading design constraints file at '/openlane/designs/ZeroToFiveCounter/src/ZeroToFiveCounter.sdc'…
+Net: _062_
+  Pin: _360_/D (sky130_fd_sc_hd__dfrtp_4)
+    Layer: met2
+      Partial area ratio:   39.44
+      Required ratio:    0.00 (Gate area) 
+      Partial area ratio:  198.00
+      Required ratio: 2736.24 (Side area) 
+      Cumulative area ratio:  137.29
+      Required ratio:    0.00 (Cumulative area) 
+      Cumulative area ratio:  688.03
+      Required ratio:    0.00 (Cumulative side area) 
+
+    Layer: met1
+      Partial area ratio:   97.85
+      Required ratio:    0.00 (Gate area) 
+      Partial area ratio:  490.03
+      Required ratio:  400.00 (Side area) (VIOLATED)
+      Cumulative area ratio:   97.85
+      Required ratio:    0.00 (Cumulative area) 
+      Cumulative area ratio:  490.03
+      Required ratio:    0.00 (Cumulative side area) 
+
+    Layer: li1
+      Partial area ratio:    0.00
+      Required ratio:    0.00 (Gate area) 
+      Partial area ratio:    0.00
+      Required ratio:   75.00 (Side area) 
+      Cumulative area ratio:    0.00
+      Required ratio:    0.00 (Cumulative area) 
+      Cumulative area ratio:    0.00
+      Required ratio:    0.00 (Cumulative side area) 
+
+    Via: M1M2_PR
+      Partial area ratio:    0.18
+      Required ratio:    6.00 (Gate area) 
+      Cumulative area ratio:    0.41
+      Required ratio:    0.00 (Cumulative area) 
+
+    Via: L1M1_PR_MR
+      Partial area ratio:    0.23
+      Required ratio:    3.00 (Gate area) 
+      Cumulative area ratio:    0.23
+      Required ratio:    0.00 (Cumulative area) 
+
+
+[INFO ANT-0002] Found 1 net violations.
+[INFO ANT-0001] Found 1 pin violations.
