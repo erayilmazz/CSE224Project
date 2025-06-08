@@ -1,3 +1,0 @@
-Warning: base.sdc line 18, port '__VIRTUAL_CLK__' not found.
-Warning: base.sdc line 52, transition time can not be specified for virtual clocks.
-[WARNING] Did not save OpenROAD database!

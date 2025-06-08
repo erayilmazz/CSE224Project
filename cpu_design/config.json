@@ -1,0 +1,36 @@
+{
+  "//": "Basics",
+  "DESIGN_NAME": "cpu_core",
+  "VERILOG_FILES": "dir::src/*.v",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10,
+  "PNR_SDC_FILE": "dir::sdc/cpu_core.sdc",
+  "SIGNOFF_SDC_FILE": "dir::sdc/cpu_core.sdc",
+  "PL_RANDOM_GLB_PLACEMENT": true,
+
+  "//": "Floorplan",
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 250 250",
+  "PL_TARGET_DENSITY": 0.6,
+
+  "//": "Power",
+  "FP_PDN_AUTO_ADJUST": false,
+  "FP_PDN_VPITCH": 25,
+  "FP_PDN_HPITCH": 25,
+  "FP_PDN_VOFFSET": 5,
+  "FP_PDN_HOFFSET": 5,
+
+  "//": "Other",
+  "DIODE_INSERTION_STRATEGY": 3,
+  "FP_PIN_ORDER_CFG": "dir::pin/order.cfg",
+
+  "//": "Technology-Specific Configs",
+  "pdk::sky130*": {
+    "FP_CORE_UTIL": 40,
+    "MAX_FANOUT_CONSTRAINT": 5,
+    "CLOCK_PERIOD": 10,
+    "scl::sky130_fd_sc_hd": {
+      "CLOCK_PERIOD": 10
+    }
+  }
+}
